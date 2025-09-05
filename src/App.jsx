@@ -4,7 +4,7 @@ import "./index.css";
 const App = () => {
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+      className="w-full min-h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
       }}
@@ -16,7 +16,6 @@ const App = () => {
       </div>
 
       <h1 className="text-3xl bg-orange-500 py-3 px-5">Currency Converter</h1> */}
-
       <Input />
     </div>
   );
