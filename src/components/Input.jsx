@@ -32,15 +32,32 @@ const Input = () => {
     //conversion logic
   };
 
+  //function to handle favorite
+  const handleFavorite = (currency) => {
+    //add tp favorite
+  };
+
   return (
     <div className="w-lg mx-auto my-10 p-5 bg-white  rounded-lg shadow-md">
       <h2 className="mb-5 text-2xl font-semibold text-gray-700">
         Currency Converter
       </h2>
       <div>
-        <CurrencyDropdown currencies={currencies} title="From:" />
+        <CurrencyDropdown
+          currencies={currencies}
+          title="From:"
+          currency={fromCurrency}
+          setFromCurrency={setFromCurrency}
+          handleFavorite={handleFavorite}
+        />
         {/* Swap Currency Button */}
-        <CurrencyDropdown currencies={currencies} title="To:" />
+        <CurrencyDropdown
+          currencies={currencies}
+          title="To:"
+          currency={ToCurrency}
+          setToCurrency={setToCurrency}
+          handleFavorite={handleFavorite}
+        />
       </div>
       <div className="mt-4">
         <label
